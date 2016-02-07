@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="./css/main.css" />
+<title>Welcome</title>
+<script type="text/javascript">
+
+var slideimages = new Array() // create new array to preload images
+slideimages[0] = new Image() // create new instance of image object
+slideimages[0].src = "./images/h1.jpg" // set image src property to image path, preloading image in the process
+slideimages[1] = new Image()
+slideimages[1].src = "./images/h2.jpg"
+slideimages[2] = new Image()
+slideimages[2].src = "./images/h3.jpg"
+
+</script>
+</head>
+
+<body>
+<!--<h1>
+<img src="uploadedwebclientlogo.jpg" id="img1"></img>
+WelcOme To MCA-E-Resource</h1>--->
+<!--<img src="images/eresources (2).jpg" style="height:100px; width:200px;"></img>-->
+<header>
+
+  <h1><img src="images/eresources (2).jpg" style="height:80px; width:200px;"></img>WelcOme To MCA-E-Resource</h1>
+</header>
+
+<nav>
+<div id="nav1">
+<a href="#"><h4 class="h">Home</h4></a></br>
+<a href="Faculty.html"><h4 class="h">Faculty</h4></a></br>
+<a href="Contactus.html"><h4 class="h">Contact Us</h4></a></br>
+<a href=""><h4 class="h">About Us</h4></a>
+</br>
+<a href="index.php"><h4 class="h">Admin LogIn</h4></a>
+</div>
+</nav>
+
+<section>
+  <h1 id="dep"><img src="uploadedwebclientlogo.jpg" style="height:40px; width:30px" />DEPARTMENT OF MCA</h1></br></br>
+<p id="p1">
+“Be a part of thriving campus where collaborative learning, discussions and brain storming are fundamentals and learning knows no bounds”
+</p>
+</br>
+</br>
+<!--<img src="p.jpg" />--->
+<img src="h1.jpg" id="slide" />
+
+<script type="text/javascript">
+
+//variable that will increment through the images
+var step=0
+
+function slideit(){
+ //if browser does not support the image object, exit.
+ if (!document.images)
+  return
+ document.getElementById('slide').src = slideimages[step].src
+ if (step<2)
+  step++
+ else
+  step=0
+ //call function "slideit()" every 2.5 seconds
+ setTimeout("slideit()",2500)
+}
+
+slideit()
+
+</script>
+<p id="p2">
+</br>
+</br>
+To achieve this goal, ABES Engineering College has established a “CENTER FOR CAREER PLANNING & DEVELOPMENT (CCPD), a center to develop and work for a strong Industry Academia Partnership. “MCA” at “ABES Engineering College” provides a professional learning environment that acts as a catalyst for the exponential growth of students’ academic as well as extracurricular abilities. MCA is an AICTE approved and NBA accredited post-graduation program spread over six semesters (3 years) and exclusively designed to meet the constantly evolving IT industry requirements. MCA provides a platform to the MCA students for excellent learning with distinctive strengths in education and entrepreneurship development, contributing to the development of well trained post graduates to meet the professional manpower needs of India as well as the world.</br></br> 
+We are proud to possess qualified, experienced, committed and dedicated team of faculty members having past association with IIT’s, NIT’s and other reputed institutions of our country. Our faculty brings passion and enthusiasm for teaching into the classroom providing an interactive and personalized approach to learning. Some of the faculty members have rich experience of the corporate world. Our faculty comprise of M.Tech and Ph.D holders in the field of computer science. Most of the faculty members are IBM DB2, RAD and RTC certified. The faculty is credited with presenting papers in national and international conferences, journals and computer conventions. The faculty is encouraged to undergo practical training by the industry experts in the latest/emerging technologies.</br></br>
+We strongly emphasize the conduct of seminars, group discussions, quiz to inculcate the art of culling out study material from journals and to hone communication skills. In addition, special guest lectures and talks by invited experts covering latest developments and trends in the field of computer science and applications foster an environment of creativity and innovation. The students of the department, apart from winning kudos in various co-curricular contests, have also been earning, consistently, top academic honors. In various sports and games too, the students have distinguished themselves. Professional skills of our students have been recognized by MICROSOFT, IBM, ADOBE and ORACLE.</br></br> 
+Maximum alumni of MCA department are working in various reputed multinational IT companies like TCS, IBM, WIPRO, BIRLA SOFT, ACCENTURE, HCL, TECHMAHINDRA, NCR CORPORATIONS, INFOSYS and many more.
+
+</p>
+</section>
+<aside>
+<div id="h">
+<a href="StdReg.php"><h4>Student Registration</h4></a></br>
+<a href="FacultyLogin.php"><h4>Faculty Login</h4></a></br>
+<a href="StdLogin.php"><h4>Student Login</h4></a></br>
+<a href="StdLogin.php"><h4>Download Notes</h4></a></br>
+<a href="StdLogin.php"><h4>Download Question Paper</h4></a>
+
+
+
+<div></aside>
+<footer>
+<img src="uploadedwebclientlogo.jpg" style="height:40px; width:30px" />
+  Copyright © EResource.com
+</footer>
+</body>
+</html>
